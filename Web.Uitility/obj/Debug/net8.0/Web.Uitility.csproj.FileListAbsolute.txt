@@ -5,6 +5,7 @@
 /Users/srinivasreddy/Desktop/App/Web.Uitility/obj/Debug/net8.0/Web.Uitility.AssemblyInfoInputs.cache
 /Users/srinivasreddy/Desktop/App/Web.Uitility/obj/Debug/net8.0/Web.Uitility.AssemblyInfo.cs
 /Users/srinivasreddy/Desktop/App/Web.Uitility/obj/Debug/net8.0/Web.Uitility.csproj.CoreCompileInputs.cache
+/Users/srinivasreddy/Desktop/App/Web.Uitility/obj/Debug/net8.0/Web.Uitility.sourcelink.json
 /Users/srinivasreddy/Desktop/App/Web.Uitility/obj/Debug/net8.0/Web.Uitility.dll
 /Users/srinivasreddy/Desktop/App/Web.Uitility/obj/Debug/net8.0/refint/Web.Uitility.dll
 /Users/srinivasreddy/Desktop/App/Web.Uitility/obj/Debug/net8.0/Web.Uitility.pdb

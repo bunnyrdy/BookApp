@@ -307,6 +307,7 @@
 /Users/srinivasreddy/Desktop/App/Web/bin/Debug/net8.0/refs/System.Xml.XPath.XDocument.dll
 /Users/srinivasreddy/Desktop/App/Web/bin/Debug/net8.0/refs/WindowsBase.dll
 /Users/srinivasreddy/Desktop/App/Web/bin/Debug/net8.0/Humanizer.dll
+/Users/srinivasreddy/Desktop/App/Web/bin/Debug/net8.0/Microsoft.AspNetCore.JsonPatch.dll
 /Users/srinivasreddy/Desktop/App/Web/bin/Debug/net8.0/Microsoft.AspNetCore.Mvc.Razor.Extensions.dll
 /Users/srinivasreddy/Desktop/App/Web/bin/Debug/net8.0/Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation.dll
 /Users/srinivasreddy/Desktop/App/Web/bin/Debug/net8.0/Microsoft.AspNetCore.Razor.Language.dll
@@ -342,6 +343,7 @@
 /Users/srinivasreddy/Desktop/App/Web/bin/Debug/net8.0/Mono.TextTemplating.dll
 /Users/srinivasreddy/Desktop/App/Web/bin/Debug/net8.0/MySqlConnector.dll
 /Users/srinivasreddy/Desktop/App/Web/bin/Debug/net8.0/Newtonsoft.Json.dll
+/Users/srinivasreddy/Desktop/App/Web/bin/Debug/net8.0/Newtonsoft.Json.Bson.dll
 /Users/srinivasreddy/Desktop/App/Web/bin/Debug/net8.0/NuGet.Common.dll
 /Users/srinivasreddy/Desktop/App/Web/bin/Debug/net8.0/NuGet.Configuration.dll
 /Users/srinivasreddy/Desktop/App/Web/bin/Debug/net8.0/NuGet.DependencyResolver.Core.dll

@@ -11,6 +11,7 @@
 /Users/srinivasreddy/Desktop/App/Web.DataAccess/obj/Debug/net8.0/Web.DataAccess.AssemblyInfoInputs.cache
 /Users/srinivasreddy/Desktop/App/Web.DataAccess/obj/Debug/net8.0/Web.DataAccess.AssemblyInfo.cs
 /Users/srinivasreddy/Desktop/App/Web.DataAccess/obj/Debug/net8.0/Web.DataAccess.csproj.CoreCompileInputs.cache
+/Users/srinivasreddy/Desktop/App/Web.DataAccess/obj/Debug/net8.0/Web.DataAccess.sourcelink.json
 /Users/srinivasreddy/Desktop/App/Web.DataAccess/obj/Debug/net8.0/Web.Data.9D45AC3A.Up2Date
 /Users/srinivasreddy/Desktop/App/Web.DataAccess/obj/Debug/net8.0/Web.DataAccess.dll
 /Users/srinivasreddy/Desktop/App/Web.DataAccess/obj/Debug/net8.0/refint/Web.DataAccess.dll

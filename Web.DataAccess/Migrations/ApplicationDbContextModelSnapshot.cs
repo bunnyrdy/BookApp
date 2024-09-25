@@ -34,7 +34,8 @@ namespace Web.DataAccess.Migrations
 
                     b.Property<string>("Name")
                         .IsRequired()
-                        .HasColumnType("longtext");
+                        .HasMaxLength(50)
+                        .HasColumnType("varchar(50)");
 
                     b.HasKey("Category_Id");
 
@@ -73,10 +74,17 @@ namespace Web.DataAccess.Migrations
                         .IsRequired()
                         .HasColumnType("longtext");
 
+                    b.Property<int>("CategoryId")
+                        .HasColumnType("int");
+
                     b.Property<string>("Description")
                         .HasColumnType("longtext");
 
                     b.Property<string>("ISBN")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
+                    b.Property<string>("Imageurl")
                         .IsRequired()
                         .HasColumnType("longtext");
 
@@ -98,6 +106,8 @@ namespace Web.DataAccess.Migrations
 
                     b.HasKey("Product_Id");
 
+                    b.HasIndex("CategoryId");
+
                     b.ToTable("Products");
 
                     b.HasData(
@@ -105,8 +115,10 @@ namespace Web.DataAccess.Migrations
                         {
                             Product_Id = 1,
                             Author = "Vyasadu",
+                            CategoryId = 1,
                             Description = "King of Books",
                             ISBN = "MB123456",
+                            Imageurl = "",
                             ListPrice = 400.0,
                             Price = 0.0,
                             Price100 = 200.0,
@@ -117,8 +129,10 @@ namespace Web.DataAccess.Migrations
                         {
                             Product_Id = 2,
                             Author = "Vyasudu",
+                            CategoryId = 2,
                             Description = "Teaches the way of life",
                             ISBN = "BG3431234",
+                            Imageurl = "",
                             ListPrice = 300.0,
                             Price = 0.0,
                             Price100 = 150.0,
@@ -129,8 +143,10 @@ namespace Web.DataAccess.Migrations
                         {
                             Product_Id = 3,
                             Author = "Chethan Bagath",
+                            CategoryId = 0,
                             Description = "The the life of the indian girl",
                             ISBN = "IG8493793",
+                            Imageurl = "",
                             ListPrice = 100.0,
                             Price = 0.0,
                             Price100 = 50.0,
@@ -141,14 +157,27 @@ namespace Web.DataAccess.Migrations
                         {
                             Product_Id = 4,
                             Author = "Bagath",
+                            CategoryId = 3,
                             Description = "love story",
                             ISBN = "HG53827283",
+                            Imageurl = "",
                             ListPrice = 150.0,
                             Price = 0.0,
                             Price100 = 80.0,
                             Price50 = 100.0,
                             Title = "Half girlfriend"
                         });
+                });
+
+            modelBuilder.Entity("Web.Models.Models.Product", b =>
+                {
+                    b.HasOne("Web.Models.Models.Category", "Category")
+                        .WithMany()
+                        .HasForeignKey("CategoryId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Category");
                 });
 #pragma warning restore 612, 618
         }

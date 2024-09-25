@@ -5,12 +5,32 @@
       "PackagePath": "staticwebassets/Web.bundle.scp.css"
     },
     {
+      "Id": "/Users/srinivasreddy/Desktop/App/Web/wwwroot/Images/Product/08f2bc14-56b9-41d4-bde3-af25d43b6682.jpeg",
+      "PackagePath": "staticwebassets/Images/Product/08f2bc14-56b9-41d4-bde3-af25d43b6682.jpeg"
+    },
+    {
+      "Id": "/Users/srinivasreddy/Desktop/App/Web/wwwroot/Images/Product/a2a0db13-8149-4b9b-812e-5201e08d4d06.png",
+      "PackagePath": "staticwebassets/Images/Product/a2a0db13-8149-4b9b-812e-5201e08d4d06.png"
+    },
+    {
+      "Id": "/Users/srinivasreddy/Desktop/App/Web/wwwroot/Images/Product/eceba8d2-3805-452f-b387-9f358520e621.png",
+      "PackagePath": "staticwebassets/Images/Product/eceba8d2-3805-452f-b387-9f358520e621.png"
+    },
+    {
+      "Id": "/Users/srinivasreddy/Desktop/App/Web/wwwroot/Images/Product/f9c9f4a5-5858-45e1-ace9-b45196fca7b1.png",
+      "PackagePath": "staticwebassets/Images/Product/f9c9f4a5-5858-45e1-ace9-b45196fca7b1.png"
+    },
+    {
       "Id": "/Users/srinivasreddy/Desktop/App/Web/wwwroot/css/site.css",
       "PackagePath": "staticwebassets/css/site.css"
     },
     {
       "Id": "/Users/srinivasreddy/Desktop/App/Web/wwwroot/favicon.ico",
       "PackagePath": "staticwebassets/favicon.ico"
+    },
+    {
+      "Id": "/Users/srinivasreddy/Desktop/App/Web/wwwroot/js/product.js",
+      "PackagePath": "staticwebassets/js/product.js"
     },
     {
       "Id": "/Users/srinivasreddy/Desktop/App/Web/wwwroot/js/site.js",

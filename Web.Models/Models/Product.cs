@@ -1,8 +1,10 @@
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+using Microsoft.AspNetCore.Mvc.ModelBinding.Validation;
 
 namespace Web.Models.Models
 {
-    public class Product
+    public class    Product
     {
         [Key]
         public int Product_Id{get;set;}
@@ -24,9 +26,10 @@ namespace Web.Models.Models
         [Range(1,1000)]
         public double ListPrice{get;set;}
 
-        [Required]
-        [Display(Name = "price for 1-50")]
-        [Range(1,1000)]
+        // [Required]
+        // [Display(Name = "price for 1-50")]
+        // [Range(1,1000)]
+        [ValidateNever]
         public double Price{get;set;}
 
         [Required]
@@ -38,6 +41,14 @@ namespace Web.Models.Models
         [Display(Name = "Price for 100+")]
         [Range(1,1000)]
         public double Price100{get;set;}
+
+        public int CategoryId {  get ; set;}
+        [ForeignKey("CategoryId")]
+
+        [ValidateNever]
+        public Category Category { get; set; }
+        [ValidateNever]
+        public string Imageurl{get;set;}
         
     }
 }

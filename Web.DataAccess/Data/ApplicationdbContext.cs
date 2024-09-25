@@ -17,19 +17,19 @@ namespace Web.DataAccess.Data
 
                 modelBuilder.Entity<Product>().HasData(
 
-                    new Product{    Product_Id = 1,Title = "Mahabarath", Author = "Vyasadu", Description= "King of Books", ISBN = "MB123456", ListPrice = 400, Price50 = 300, Price100 = 200},
+                    new Product{    Product_Id = 1,Title = "Mahabarath", Author = "Vyasadu", Description= "King of Books", ISBN = "MB123456", ListPrice = 400, Price50 = 300, Price100 = 200,CategoryId = 1,Imageurl = ""},
 
                     new Product{
 
-                        Product_Id = 2,Title = "BagavithGetha", Author = "Vyasudu", Description= "Teaches the way of life", ISBN = "BG3431234", ListPrice = 300, Price50 = 200, Price100 = 150
+                        Product_Id = 2,Title = "BagavithGetha", Author = "Vyasudu", Description= "Teaches the way of life", ISBN = "BG3431234", ListPrice = 300, Price50 = 200, Price100 = 150,CategoryId = 2,Imageurl = ""
                     },
                     new Product{
 
-                        Product_Id = 3,Title = "One indian girl", Author = "Chethan Bagath", Description= "The the life of the indian girl", ISBN = "IG8493793", ListPrice = 100, Price50 = 70, Price100 = 50
+                        Product_Id = 3,Title = "One indian girl", Author = "Chethan Bagath", Description= "The the life of the indian girl", ISBN = "IG8493793", ListPrice = 100, Price50 = 70, Price100 = 50,Imageurl = ""
                     },
                     new Product{
 
-                        Product_Id = 4,Title = "Half girlfriend", Author = "Bagath", Description= "love story", ISBN = "HG53827283", ListPrice = 150, Price50 = 100, Price100 = 80
+                        Product_Id = 4,Title = "Half girlfriend", Author = "Bagath", Description= "love story", ISBN = "HG53827283", ListPrice = 150, Price50 = 100, Price100 = 80,CategoryId = 3,Imageurl = ""
                     });
 
 
