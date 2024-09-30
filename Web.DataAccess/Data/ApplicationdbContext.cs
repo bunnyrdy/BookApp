@@ -1,14 +1,24 @@
+using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Options;
 using Web.Models.Models;
 
 namespace Web.DataAccess.Data
 {
-    public class ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : DbContext(options)
+    public class ApplicationDbContext : IdentityDbContext<IdentityUser> 
     {
+        public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options) 
+        {
+
+        }
+    
         public DbSet<Category> categories { get; set; }
-         public DbSet<Product>Products { get; set; }
+         public DbSet<Product>Products { get; set; }    
+         public DbSet<ApplicationUser>applicationUsers{get;set;}
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            base.OnModelCreating(modelBuilder);
             modelBuilder.Entity<Category>().HasData(
                 new Category { Category_Id = 1, Name = "action", DisplayOrder = 1 },
                 new Category { Category_Id = 2, Name = "scifi", DisplayOrder = 2 },
@@ -32,8 +42,8 @@ namespace Web.DataAccess.Data
                         Product_Id = 4,Title = "Half girlfriend", Author = "Bagath", Description= "love story", ISBN = "HG53827283", ListPrice = 150, Price50 = 100, Price100 = 80,CategoryId = 3,Imageurl = ""
                     });
 
-
+        }
 
         }
     }
-}
+

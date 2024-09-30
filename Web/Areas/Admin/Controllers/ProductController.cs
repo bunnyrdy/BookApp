@@ -93,45 +93,28 @@ namespace Web.Areas.Admin.Controllers
             }
             
         }
-
-
-    public ActionResult Delete(int id)
-        {
-           if(id==null || id==0){
-                return NotFound();
-           }
-
-            
-            Product? productFromdb = _unitOfWork.Product.Get(u => u.Product_Id==id);
-        
-
-           
-           if(productFromdb == null){
-            return NotFound();
-           }
-           return View(productFromdb);
-        }
-        [HttpPost,ActionName("Delete")]
-         public ActionResult DeletePost(int id)
-         {
-            Product? obj = _unitOfWork.Product.Get(u => u.Product_Id==id);
-            if (obj == null){
-                return NotFound();
-            }
-            
-            
-            _unitOfWork.Product.Remove(obj);
-            _unitOfWork.Save();
-            TempData["success"] = "Category deleted successfully";
-            return RedirectToAction("ProductIndex");
-
-    }
     #region API CALLS   
      [HttpGet]
         public ActionResult GetAll()
         {
             List<Product> objProductList = _unitOfWork.Product.GetAll(includeProperties: "Category").ToList();
             return Json(new { data = objProductList });
+        }
+
+        public ActionResult Delete(int? id)
+        {
+            var productToBeDeleted = _unitOfWork.Product.Get(u => u.Product_Id == id);
+            if(productToBeDeleted == null){
+                return Json(new {success = false,message = "Error while deleting"});
+            }
+            var oldImagePath = Path.Combine(_webHostEnvironment.WebRootPath,productToBeDeleted.Imageurl.TrimStart('\\'));
+                if(System.IO.File.Exists(oldImagePath)){
+                    System.IO.File.Delete(oldImagePath);
+                }
+                _unitOfWork.Product.Remove(productToBeDeleted);
+                _unitOfWork.Save();
+                return Json(new {success = true,message = "Deleted successfully"});
+            
         }
 
     #endregion

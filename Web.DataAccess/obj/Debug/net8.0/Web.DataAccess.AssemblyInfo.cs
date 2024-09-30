@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Web.DataAccess")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+579a5cb670e1f8e1cb117602ee7800e4ec0721a2")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9abf94294b1721ba67084594b9eb3bbf70f9364c")]
 [assembly: System.Reflection.AssemblyProductAttribute("Web.DataAccess")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Web.DataAccess")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
